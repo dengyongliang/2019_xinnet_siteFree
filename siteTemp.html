@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>0元建站_免费建站_模板建站_新网</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Keywords" content="网站建设,自助建站,模板建站,免费网站,免费建站,免费做网站,网页制作,网站模板,网站设计" />
+    <meta name="Description" content="新网建站,免费0元建站试用,新网提供全面的网站制作服务,网站自适应,40+功能模块,千套模板任意选,满足全行业需求.新网建站费用低,功能强大并为您提供7*24小时客服热线." />
     <link rel="stylesheet" type="text/css" href="http://imgi.xinnet.com/www/zt/2018Y1012mail/css/pullNew_mail.css">
     <link rel="stylesheet" href="./css/siteTemp.css">
   </head>
@@ -32,7 +34,7 @@
               <div class="bt">
 
                 <div class="btn">
-                  <a href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=free" target="_blank" class="buy">立即体验</a>
+                  <a href="javascript:;" dataCode="B201909092407" data-href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=free" class="buy">立即体验</a>
                 </div>
                 <p class="clear">
                   <a href="https://im.7x24cc.com/phone_webChat.html?accountId=N000000014613&chatId=816becd7-7ba1-4bf7-9883-9869fd3bcf48" target="_blank" class="l">
@@ -63,7 +65,7 @@
               <div class="bt">
 
                 <div class="btn">
-                  <a href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=standard" target="_blank" class="buy">立即购买</a>
+                  <a href="javascript:;" data-href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=standard" class="buy">立即购买</a>
                 </div>
                 <p class="clear">
                   <a href="https://im.7x24cc.com/phone_webChat.html?accountId=N000000014613&chatId=816becd7-7ba1-4bf7-9883-9869fd3bcf48" target="_blank" class="l">
@@ -95,7 +97,7 @@
               <div class="bt">
 
                 <div class="btn">
-                  <a href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=enterprise" target="_blank" class="buy">立即购买</a>
+                  <a href="javascript:;" data-href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=enterprise" class="buy">立即购买</a>
                 </div>
                 <p class="clear">
                   <a href="https://im.7x24cc.com/phone_webChat.html?accountId=N000000014613&chatId=816becd7-7ba1-4bf7-9883-9869fd3bcf48" target="_blank" class="l">
@@ -127,7 +129,7 @@
               </div>
               <div class="bt">
                 <div class="btn">
-                  <a href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=market" target="_blank" class="buy">立即购买</a>
+                  <a href="javascript:;" data-href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=market" class="buy">立即购买</a>
                 </div>
                 <p class="clear">
                   <a href="https://im.7x24cc.com/phone_webChat.html?accountId=N000000014613&chatId=816becd7-7ba1-4bf7-9883-9869fd3bcf48" target="_blank" class="l">
@@ -155,10 +157,10 @@
                 <thead>
                   <tr>
                     <th>功能 \ 版本</th>
-                    <th>免费版<br /><a href="javascript:;" class="buy">立即体验</a></th>
-                    <th>标准版<br /><a href="javascript:;" class="buy">立即购买</a></th>
-                    <th>专业版<br /><a href="javascript:;" class="buy">立即购买</a></th>
-                    <th>高级版<br /><a href="javascript:;" class="buy">立即购买</a></th>
+                    <th>免费版<br /><a href="javascript:;" class="buy" data-href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=free" dataCode="B201909092407">立即体验</a></th>
+                    <th>标准版<br /><a href="javascript:;" class="buy" data-href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=standard">立即购买</a></th>
+                    <th>专业版<br /><a href="javascript:;" class="buy" data-href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=enterprise">立即购买</a></th>
+                    <th>高级版<br /><a href="javascript:;" class="buy" data-href="http://www.xinnet.com/jianzhan/jianzhan-buy-detail.html?name=zzjz&type=market">立即购买</a></th>
                   </tr>
                 </thead>
               </table>
@@ -764,7 +766,7 @@
       </div>
     </div>
     <!-- end -->
-    <script src="http://imgi.xinnet.com/www/newjavascript/jquery.js"></script>
+    <!-- <script src="http://imgi.xinnet.com/www/newjavascript/jquery.js"></script> -->
     <script>
       window.onscroll = function () {
         var curTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -778,14 +780,22 @@
       }
       // var loginId = 'notLogin'
       //立即领取01
-      $("#bugZero").click(function(){
+      $("a.buy").click(function(){
+        var dataCode = $(this).attr("dataCode");
+        var dataHref = $(this).attr("data-href");
         if(loginId!="notLogin"){
-          var dataCode = $(this).attr("dataCode");
-          getCoupon(dataCode);
+          if (dataCode) {
+            getCoupon(dataCode);
+          } else {
+            window.open(dataHref, "_blank");
+          }
         }
         else{
-          bgw_tc("请先登录新网账号，再申请免费版！<br /><br /><a href = 'https://login.xinnet.com/?service=http://www.xinnet.com/jianzhan/zizhujianzhan.html' target = '_blank'>立即登录</a>  <a href = 'http://www.xinnet.com/user/user.do?method=toRegister' target = '_blank'>新用户免费注册</a>");
-          // window.open("http://www.xinnet.com/user/user.do?method=toRegister", "_blank");
+          if (dataCode) {
+            bgw_tc("请先登录新网账号，再申请免费版！<br /><br /><a href = 'https://login.xinnet.com/?service=http://www.xinnet.com/jianzhan/zt/0920.html' target = '_blank'>立即登录</a>  <a href = 'http://www.xinnet.com/user/user.do?method=toRegister' target = '_blank'>新用户免费注册</a>");
+          } else {
+            window.open("https://login.xinnet.com/?service=" + dataHref, "_blank");
+          }
         }
       });
       function getCoupon(dataCode){
